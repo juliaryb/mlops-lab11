@@ -1,0 +1,35 @@
+[project]
+name = "mlops-lab11"
+version = "0.1.0"
+description = "Sentiment analysis service for MLOps Lab 11"
+readme = "README.md"
+requires-python = ">=3.12"
+
+# keeping base dependencies minimal
+dependencies = [
+    "numpy>=2.3.4",
+    "pydantic>=2.12.3",
+]
+
+[project.optional-dependencies]
+
+integration = [
+    "fastapi>=0.119.1",
+    "uvicorn>=0.38.0",
+]
+
+deployment = [
+    "boto3>=1.42.25",
+    "joblib>=1.5.2",
+    "scikit-learn>=1.7.2",
+    "sentence-transformers>=5.1.1",
+    "torch>=2.9.0",
+    "transformers>=4.57.1",
+]
+
+inference = [
+    "fastapi>=0.119.1",
+    "uvicorn>=0.38.0",
+    "joblib>=1.5.2",
+    "numpy>=2.3.4",
+]
