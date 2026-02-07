@@ -16,8 +16,6 @@ dependencies = [
 integration = [
     "pytest",
     "ruff",
-    "fastapi>=0.119.1",
-    "uvicorn>=0.38.0",
 ]
 
 deployment = [

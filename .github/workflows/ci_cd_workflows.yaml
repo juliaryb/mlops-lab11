@@ -25,7 +25,7 @@ jobs:
 
       # TODO: Add steps for 'ruff check' and 'pytest'
       - name: Ruff check
-        run: ruff check .
+        run: uv run ruff check .
 
       - name: Pytest
-        run: pytest tests
+        run: uv run pytest
